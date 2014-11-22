@@ -1,0 +1,16 @@
+header{
+
+	@include grid(1,1);
+	height: 100%;
+	background: $three;
+
+	.col__header{
+		@include grid(10,12);
+		padding-left: 50px;
+		padding-top: 50px;
+		height: 100%;
+	}
+
+
+}
+
