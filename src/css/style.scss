@@ -3,9 +3,9 @@
 
 // =====UTILITIES=====================================
 
-@import "utilities/base.scss";
 @import "utilities/_variables.scss";
 @import "utilities/_mixins.scss";
+@import "utilities/base.scss";
 
 // =====OBJECTS======================================
 
@@ -20,7 +20,6 @@
 @import "partials/content.scss";
 @import "partials/header.scss";
 @import "partials/footer.scss";
-@import "partials/media.scss";
 
 // ***************************************************
 

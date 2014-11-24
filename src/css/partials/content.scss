@@ -1,5 +1,22 @@
-body{
-    background-color: $one;
+.row{
+  max-width: 1280px;
+  margin: 0 auto;
+
+    &:before{
+    @include grid(1,12);
+    content: " ";
+    height: 1px;
+    visibility: hidden;
+
+      @media only screen and (max-width:$small){
+          display: none;
+      }
+    }
+
+}
+
+.main__column--push{
+  @include push(1,3);
 }
 
 .main{
@@ -8,36 +25,13 @@ body{
   width: 100%;
   background: $one;
   margin: 0 auto;
-
-
 }
 
-.col{
+.col__half{
   @include grid(5,12);
-  background: $two;
-  // height: 100%;
-}
 
-.col__gap{
-  @include grid(1,12);
-  height: 1px;
-  visibility: hidden;
-}
-
-.row::before{
-  @include grid(1,12);
-  content: " ";
-  height: 1px;
-  visibility: hidden;
-}
-
-
-.main__column--push{
-  @include push(1,3);
-}
-
-
-.wrapper{
-
-    // margin: 0 auto;
+    @media only screen and (max-width:$small){
+        width: 83%;
+        margin-left: 8%;
+    }
 }

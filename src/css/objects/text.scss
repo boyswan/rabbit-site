@@ -7,20 +7,41 @@
     font-style: normal;
 }
 
-.block{
-	font-family: 'BLOKKNeue-Regular';
-	font-size: 2rem;
-	word-break: break-all; // PRODUCTION ONLY 
+.text__wrap{
+  padding: 50px;
+  margin-top: 30px;
+
+      @media only screen and (max-width:$small){
+          text-align: center;
+          margin-top: 0;
+          padding: 30px;
+
+      }
+
+}
+
+.copy__intro{
+  font-family: 'Helvetica';
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
 }
 
 
-.text__wrap{
-	padding: 50px;
+.copy__main{
+  font-family: 'Helvetica';
+  font-weight: 400;
+  font-size: 1.5rem;
+}
 
-	.title{
+.copy__footer{
+  font-family: 'Helvetica';
+  font-weight: 400;
+  font-size: 1.5rem;
+}
 
-	}
-
-	.intro__copy{
-	}
+.copy__header{
+  font-family: 'Helvetica';
+  font-weight: 800;
+  font-size: 2.5rem;
 }
