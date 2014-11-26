@@ -7,41 +7,47 @@
     font-style: normal;
 }
 
-.text__wrap{
-  padding: 50px;
-  margin-top: 30px;
-
-      @media only screen and (max-width:$small){
-          text-align: center;
-          margin-top: 0;
-          padding: 30px;
-
-      }
-
-}
-
-.copy__intro{
-  font-family: 'Helvetica';
-  font-weight: 800;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-}
-
-
-.copy__main{
-  font-family: 'Helvetica';
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-
-.copy__footer{
-  font-family: 'Helvetica';
-  font-weight: 400;
-  font-size: 1.5rem;
-}
 
 .copy__header{
   font-family: 'Helvetica';
   font-weight: 800;
   font-size: 2.5rem;
+}
+
+
+.text__wrap{
+  padding: 50px;
+  margin-top: 30px;
+
+    @media only screen and (max-width:$small){
+        text-align: center;
+        margin-top: 0;
+        padding: 30px;
+
+    }
+    
+    .copy__intro{
+      font-family: 'Helvetica';
+      font-weight: 800;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .copy__main{
+      font-family: 'Helvetica';
+      font-weight: 400;
+      font-size: 1.5rem;
+
+        @media only screen and (max-width:$small){
+            margin-bottom: 15px;
+        }
+
+    }
+
+}
+
+.copy__footer{
+  font-family: 'Helvetica';
+  color: white;
+  font-size: .5rem;
 }

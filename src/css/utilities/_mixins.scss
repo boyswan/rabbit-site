@@ -21,3 +21,7 @@
   margin-left: $m + $grid-margin;
   
 }
+
+@mixin transition ($amount) {
+  transition: all $amount ease-in-out;
+}

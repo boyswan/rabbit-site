@@ -77,13 +77,6 @@ module.exports = function(grunt) {
     },
 
     uglify: {
-      options: {
-        banner: '/************************************/\n' +
-                ' * @author: Jack Boyce     \n' +
-                ' * @updated: ' + (new Date()).toDateString() + '\n' +
-                '/************************************/\n'+
-                '\n'
-            },
       compile: {
         files: {
         'dist/js/build.min.js': ['src/js/build/build.js']

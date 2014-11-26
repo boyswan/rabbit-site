@@ -1,18 +1,36 @@
+.primary {
+  @include grid(1,1);
+}
+
+.secondary {
+  @include grid(1,1);
+  background-color: white;
+
+    .col__half{
+      margin-top: 100px;
+
+      @media only screen and (max-width:$small){
+        margin-top: 40px;
+      }
+
+    }
+
+}
+
 .row{
   max-width: 1280px;
   margin: 0 auto;
 
     &:before{
-    @include grid(1,12);
+    @include grid(1.001,12);
     content: " ";
     height: 1px;
     visibility: hidden;
 
       @media only screen and (max-width:$small){
-          display: none;
+        display: none;
       }
     }
-
 }
 
 .main__column--push{
@@ -29,9 +47,15 @@
 
 .col__half{
   @include grid(5,12);
-
+  margin: 0;
     @media only screen and (max-width:$small){
         width: 83%;
         margin-left: 8%;
+    }
+
+      &.last{
+        @media only screen and (max-width:$small){
+          margin-top: 0;
+        }   
     }
 }
