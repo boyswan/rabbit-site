@@ -25,13 +25,20 @@ p {
 
 .iphone_1 {
   height: 670px;
+  min-width: 400px;
   background-image: url(../../../assets/images/iphone_1.png);
   background-size: 450px;
   background-repeat: no-repeat;
   background-position: center top;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 950px) {
   .iphone_1 {
+    background-size: 350px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .iphone_1 {
+    min-width: 0;
     background-size: 300px;
     height: 440px;
   }
@@ -39,14 +46,22 @@ p {
 
 .iphone_2 {
   height: 670px;
+  min-width: 400px;
   background-image: url(../../../assets/images/iphone_2.png);
   background-size: 470px;
   background-repeat: no-repeat;
   background-position: center top;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 950px) {
   .iphone_2 {
-    background-size: 300px;
+    background-size: 350px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .iphone_2 {
+    min-width: 0;
+    background-size: 310px;
     height: 440px;
   }
 }
@@ -68,7 +83,7 @@ p {
   padding: 50px;
   margin-top: 30px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .text__wrap {
     text-align: center;
     margin-top: 0;
@@ -81,14 +96,30 @@ p {
   font-size: 2.5rem;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 800px) {
+  .text__wrap .copy__intro {
+    font-size: 2.25rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .text__wrap .copy__intro {
+    font-size: 2rem;
+  }
+}
 .text__wrap .copy__main {
   font-family: 'Helvetica';
   font-weight: 400;
   font-size: 1.5rem;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .text__wrap .copy__main {
     margin-bottom: 15px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .text__wrap .copy__main {
+    font-size: 1.25rem;
   }
 }
 
@@ -103,7 +134,7 @@ p {
   padding-left: 50px;
   margin-bottom: 10px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .button__wrap {
     padding-left: 0;
     display: table;
@@ -113,39 +144,52 @@ p {
 }
 .button__wrap .button {
   padding: 10px;
-  padding-left: 50px;
   border: 3px solid black;
   border-radius: 3px;
   text-decoration: none;
   color: black;
   font-family: 'Helvetica';
+  font-weight: 800;
   font-size: 1.5rem;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .button__wrap .button {
     font-size: 1rem;
   }
 }
-.button__wrap .button:before {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-size: cover;
-  background-position: center;
-  margin-left: 25px;
-  background-image: url(../../../assets/images/android.svg);
+.button__wrap .button.iphone {
+  padding-left: 50px;
+  background-size: 25px;
+  background-position: 7px 10px;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/apple_black.svg);
+}
+@media only screen and (max-width: 800px) {
+  .button__wrap .button.iphone {
+    background-position: 7px 5px;
+  }
 }
 .button__wrap .button.android {
+  padding-left: 50px;
+  background-size: 26px;
+  background-position: 7px 10px;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/android_black.svg);
   margin-left: 25px;
 }
-.button__wrap .button.android:before {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-size: cover;
-  background-position: center;
-  margin-left: 25px;
-  background-image: url(../../../assets/images/android.svg);
+@media only screen and (max-width: 950px) {
+  .button__wrap .button.android {
+    display: table;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .button__wrap .button.android {
+    background-position: 7px 5px;
+    display: initial;
+    margin-left: 25px;
+  }
 }
 
 .social__wrap {
@@ -163,7 +207,7 @@ p {
   margin-left: 25px;
   transition: all 0.2s ease-in-out;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .social__wrap .social {
     margin-left: 25px;
     width: 30px;
@@ -203,7 +247,7 @@ p {
 .secondary .col__half {
   margin-top: 100px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .secondary .col__half {
     margin-top: 40px;
   }
@@ -221,7 +265,7 @@ p {
   height: 1px;
   visibility: hidden;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .row:before {
     display: none;
   }
@@ -248,13 +292,13 @@ p {
   margin-right: 2%;
   margin: 0;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .col__half {
     width: 83%;
     margin-left: 8%;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .col__half.last {
     margin-top: 0;
   }
@@ -274,7 +318,7 @@ header .col__full {
   padding-top: 50px;
   height: 100%;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   header .col__full {
     float: none;
     width: 100%;
@@ -298,7 +342,7 @@ footer {
 footer .col__full {
   height: 100%;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   footer .col__full {
     float: none;
     width: 100%;

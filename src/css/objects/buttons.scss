@@ -11,56 +11,57 @@
 	 	}
 
 	.button{
-	padding: 10px;
-	padding-left: 50px;
-	border: 3px solid black;
-	border-radius: 3px;
-	text-decoration: none;
-	color: black;
-	font-family: 'Helvetica';
-	font-size: 1.5rem;
+		padding: 10px;
+		border: 3px solid black;
+		border-radius: 3px;
+		text-decoration: none;
+		color: black;
+		font-family: 'Helvetica';
+		font-weight: 800;
+		font-size: 1.5rem;
 
-	 	@media only screen and (max-width:$small){
-	 		font-size: 1rem;
-	 	}
+		 	@media only screen and (max-width:$small){
+		 		font-size: 1rem;
+		 	}
 
+			&.iphone{
+				padding-left: 50px;
+				background-size: 25px;
+				background-position: 7px 10px;
+				background-repeat: no-repeat;
+				background-image: url(../../../assets/images/apple_black.svg);
 
-	 	&:before{
-			display: inline-block;
-			width: 30px;
-			height: 30px;
-			background-size: cover;
-			background-position: center;
-			margin-left: 25px;
-			background-image: url(../../../assets/images/android.svg);
+	 		 		@media only screen and (max-width:$small){
+						background-position: 7px 5px;
+				 	}
+			}
 
-		}
-
-		&.android{
-		margin-left: 25px;
-
-		 	// @media only screen and (max-width:$medium){
-		 	// 	// display: inline-block;
-		 	// 	margin-top: 25px;
-		 	// 	margin-left: 0;
-		 	// }		
-
-			&:before{
-				display: inline-block;
-				width: 30px;
-				height: 30px;
-				background-size: cover;
-				background-position: center;
+			&.android{
+				padding-left: 50px;
+				background-size: 26px;
+				background-position: 7px 10px;
+				background-repeat: no-repeat;
+				background-image: url(../../../assets/images/android_black.svg);
 				margin-left: 25px;
-				background-image: url(../../../assets/images/android.svg);
+
+		 		 	@media only screen and (max-width:$medium){
+		 		 		display: table;
+		 		 		margin-top: 40px;
+						margin-left: 0;
+				 	}
+
+	 		 		@media only screen and (max-width:$small){
+						background-position: 7px 5px;
+		 		 		display: initial;
+						margin-left: 25px;
+				 	}
 
 			}
+
 		}
 
-
-	}
-
 }
+
 
 
 .social__wrap{

@@ -31,6 +31,14 @@
       font-weight: 800;
       font-size: 2.5rem;
       margin-bottom: 30px;
+
+        @media only screen and (max-width:$small){
+          font-size: 2.25rem;
+        }
+
+        @media only screen and (max-width:$medium){
+          font-size: 2rem;
+        }
     }
 
     .copy__main{
@@ -39,9 +47,14 @@
       font-size: 1.5rem;
 
         @media only screen and (max-width:$small){
-            margin-bottom: 15px;
+          margin-bottom: 15px;
+          font-size: 1rem;
+
         }
 
+        @media only screen and (max-width:$medium){
+          font-size: 1.25rem;
+        }
     }
 
 }
